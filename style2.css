@@ -1,0 +1,101 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, nav, section, footer {width: 80%}
+
+header, nav, section, article, footer, aside{ 
+    padding: 0.5%;
+    margin: 0.4%;
+    border-radius: 15px;
+}
+
+header{
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+nav{
+    background: #555;
+    color: white;
+    text-align: center;
+
+}
+
+article{
+    background: white;
+    padding: 0.5%;
+}
+
+aside{
+    width: 15.5%;
+    background-color: #ddd;
+    padding: 0.5%;
+    position: fixed;
+    right: 0%;
+    left: 82%;
+    top: 0.5%;
+    bottom: 0.5%;
+}
+
+footer{
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+a{
+    color: white;
+    margin: 0.4%;
+    text-decoration: none;
+}
+
+a:hover{
+    color: navy;
+    text-decoration: underline;
+    font-size: 1.3em;
+}
+
+img{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: spin 10s linear infinite;
+}
+
+.animLogo{
+    animation-duration: 5s;
+    animation-name: animLogo;
+    animation-iteration-count: infinite;
+    width: 60%;
+}
+
+.latido{
+    font-size: 50px;
+    color: red;
+    text-align: center;
+    animation: latCor 1s infinite;
+}
+
+@keyframes spin{
+    to{rotate: 360deg;}
+}
+
+@keyframes animLogo{
+    from {-webkit-transform: rotate(0deg); transform: rotateY(0deg);}
+    50%{-webkit-transform: rotate(180deg); transform: rotateY(180deg);}
+    to {-webkit-transform: rotate(360deg); transform: rotateY(360deg);}
+}
+
+@keyframes latCor {
+    0% {transform: scale(1);}
+    25% {transform: scale(1.2);}
+    50% {transform: scale(1);}
+    75% {transform: scale(1);}
+    100%{transform: scale(1);}
+}
